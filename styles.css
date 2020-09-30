@@ -1,0 +1,108 @@
+@media screen and (min-width: 700px) {
+  .boxes {
+    display: block; } }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+header {
+  background-color: #F0C4D9;
+  width: 100vw;
+  height: 100vh; }
+  header nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; }
+    header nav .logotipo {
+      width: 60px; }
+    header nav li {
+      display: inline-block;
+      text-decoration: none;
+      font-family: 'Work Sans', sans-serif;
+      color: black;
+      list-style: none;
+      padding: 0px 20px; }
+  header .redes-sociales {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%; }
+  header .main {
+    margin-top: 40vh;
+    margin-left: 10%; }
+    header .main h1 {
+      font-family: 'Italiana', serif;
+      font-size: 50px; }
+    header .main p {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 20px; }
+
+.botonMain {
+  position: absolute;
+  border: none;
+  background-color: #0D0D0D;
+  padding: 10px 20px;
+  color: white;
+  top: 90vh;
+  left: 50%; }
+
+.programas {
+  background-color: #EF5D46;
+  display: flex; }
+  .programas .individual {
+    display: block;
+    justify-content: center;
+    align-content: center; }
+    .programas .individual .ruedas {
+      width: 200px; }
+    .programas .individual .textos {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      padding: 5px;
+      color: white;
+      background-color: #0D0D0D;
+      width: 110px; }
+
+.trabajos .titulacion {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: 20px; }
+.trabajos .boxes1 {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .trabajos .boxes1 .box1 {
+    padding-right: 10px; }
+.trabajos .row2 {
+  margin-top: 10px; }
+.trabajos .boton {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  border: none;
+  background-color: #0D0D0D;
+  padding: 5px 20px;
+  color: white;
+  top: 70vh;
+  font-size: 14px;
+  margin-top: 10px; }
+
+.cv {
+  position: relative; }
+  .cv .titulacion {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 20px; }
+  .cv .imagen {
+    display: block;
+    width: 80%; }
+
+/*# sourceMappingURL=styles.css.map */
