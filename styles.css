@@ -1,10 +1,18 @@
-@media screen and (min-width: 700px) {
-  .boxes {
-    display: block; } }
 * {
   margin: 0;
   padding: 0;
   text-decoration: none; }
+
+.titulacion {
+  position: relative;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  margin: 40px 0px 10px 20px;
+  color: white;
+  background-color: #0D0D0D;
+  max-width: 120px;
+  padding: 4px;
+  text-align: center; }
 
 header {
   background-color: #F0C4D9;
@@ -25,11 +33,14 @@ header {
       color: black;
       list-style: none;
       padding: 0px 20px; }
-  header .redes-sociales {
-    display: block;
-    position: absolute;
-    right: 5%;
-    top: 50%; }
+  header .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 3%; }
+    header .redes .sociales {
+      padding: 10px; }
   header .main {
     margin-top: 40vh;
     margin-left: 10%; }
@@ -51,39 +62,55 @@ header {
 
 .programas {
   background-color: #EF5D46;
-  display: flex; }
+  max-height: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
   .programas .individual {
-    display: block;
-    justify-content: center;
-    align-content: center; }
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px 0px; }
     .programas .individual .ruedas {
       width: 200px; }
     .programas .individual .textos {
       font-family: 'Work Sans', sans-serif;
-      font-size: 14px;
-      padding: 5px;
+      font-weight: 900;
+      text-align: center;
+      font-size: 16px;
       color: white;
       background-color: #0D0D0D;
-      width: 110px; }
+      padding: 5px; }
 
-.trabajos .titulacion {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  margin-left: 20px; }
-.trabajos .boxes1 {
-  width: 60%;
-  height: 60%;
+@media screen and (max-width: 600px) {
+  .trabajos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .trabajos .box1 img {
+      width: 200px;
+      height: 200px; } }
+.trabajos {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .trabajos .boxes1 .box1 {
-    padding-right: 10px; }
-.trabajos .row2 {
-  margin-top: 10px; }
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 1900px;
+  flex-wrap: wrap;
+  padding: 10px 0px; }
+  .trabajos .boxes1 img {
+    width: 620px;
+    height: 620px; }
+  .trabajos .box1:hover {
+    background-image: url(./assets/Rectangle\20.png); }
+
 .trabajos .boton {
-  display: block;
   font-family: 'Work Sans', sans-serif;
   border: none;
   background-color: #0D0D0D;
@@ -94,15 +121,95 @@ header {
   margin-top: 10px; }
 
 .cv {
-  position: relative; }
-  .cv .titulacion {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 20px; }
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
   .cv .imagen {
     display: block;
     width: 80%; }
+
+/* media-query cv
+@media screen and (max-width:700px){
+    .cv{
+        background-image: url(./assets/Portfolio3.png)
+    }
+}
+*/
+@media screen and (max-width: 700px) {
+  header nav {
+    display: none; }
+
+  .redes {
+    display: none; } }
+.formulario {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 40px; }
+  .formulario label {
+    font-family: 'Italiana', serif;
+    font-size: 25px;
+    margin-right: 50px; }
+  .formulario input {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px; }
+  .formulario .mensaje {
+    margin-top: 10px 0px 20px 0px;
+    background-color: #F0C4D9;
+    padding: 20px 20px 40px 20px;
+    width: 60%; }
+    .formulario .mensaje textarea {
+      border: none;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      width: 800px;
+      background-color: rgba(0, 0, 255, 0);
+      color: grey; }
+  .formulario .botenesContacto {
+    margin-top: 0px 0px 50px 0px;
+    display: flex; }
+    .formulario .botenesContacto button {
+      border: none;
+      padding: 12px;
+      margin: 60px 10px 20px 10px;
+      background-color: #0D0D0D;
+      color: white;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 16px; }
+
+hr {
+  margin: 200px 100px 60px 100px;
+  border: 1.2px solid black; }
+
+footer nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%; }
+footer .logotipo {
+  width: 60px; }
+footer li {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  list-style: none;
+  padding: 0px 20px; }
+footer .redes {
+  display: flex;
+  margin-top: 5px;
+  padding: 1px; }
 
 /*# sourceMappingURL=styles.css.map */
