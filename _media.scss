@@ -1,5 +1,61 @@
-@media screen and (min-width: 700px){
-    .boxes{
-        display: block;
+
+/*Posicion proyectos- columna de trabajos*/
+
+@media screen and (max-width:300px){
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .boxes1{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
+
+/*Desaparece navbar, aparece el menu hamburguesa*/
+
+@media screen and (max-width: 700px){
+    header{
+        ul{
+            display: none;
+        }
+    }
+}
+
+/*Cambio de imagen para el cv - responsive*/
+
+@media screen and (max-width: 700px){
+    section .cv{
+        position: relative;
+            .cv .imagen{
+                background:url(./assets/Curriculum-mobile-05.png);
+            }
+    }
+}
+
+/*Programas*/
+
+@media screen and (max-width:700px){
+
+    section{
+        .programas{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+
+        .individual{
+            display: flex;
+            flex-direction: row;
+
+            .ruedas{
+                width: 6rem;
+            }
+        }
+        }
     }
 }

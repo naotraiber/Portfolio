@@ -1,8 +1,42 @@
+/*Posicion proyectos- columna de trabajos*/
+@media screen and (max-width: 300px) {
+  .trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .trabajos .boxes1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+/*Desaparece navbar, aparece el menu hamburguesa*/
+@media screen and (max-width: 700px) {
+  header ul {
+    display: none; } }
+/*Cambio de imagen para el cv - responsive*/
+@media screen and (max-width: 700px) {
+  section .cv {
+    position: relative; }
+    section .cv .cv .imagen {
+      background: url(./assets/Curriculum-mobile-05.png); } }
+/*Programas*/
+@media screen and (max-width: 700px) {
+  section .programas {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap; }
+    section .programas .individual {
+      display: flex;
+      flex-direction: row; }
+      section .programas .individual .ruedas {
+        width: 6rem; } }
+/*Croma*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none; }
 
+/*Titulos principales*/
 .titulacion {
   position: relative;
   font-family: 'Work Sans', sans-serif;
@@ -14,6 +48,7 @@
   padding: 4px;
   text-align: center; }
 
+/*logo + navbar + titulos + redes+ back*/
 header {
   background-color: #F0C4D9;
   width: 100vw;
@@ -30,7 +65,7 @@ header {
       display: inline-block;
       text-decoration: none;
       font-family: 'Work Sans', sans-serif;
-      color: black;
+      color: #0D0D0D;
       list-style: none;
       padding: 0px 20px; }
   header .redes {
@@ -60,6 +95,44 @@ header {
   top: 90vh;
   left: 50%; }
 
+/*Trabajos, lista*/
+.trabajos {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 0px; }
+  .trabajos .boxes1 {
+    display: flex;
+    flex-direction: row; }
+    .trabajos .boxes1 img {
+      width: 620px;
+      height: 620px; }
+
+.trabajos .boton {
+  font-family: 'Work Sans', sans-serif;
+  border: none;
+  background-color: #0D0D0D;
+  padding: 5px 20px;
+  color: white;
+  top: 70vh;
+  font-size: 14px;
+  margin-top: 10px; }
+
+/*Curriculum imagen*/
+.cv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .cv .imagen {
+    display: block;
+    width: 80%; }
+
 .programas {
   background-color: #EF5D46;
   max-height: 300px;
@@ -84,65 +157,6 @@ header {
       background-color: #0D0D0D;
       padding: 5px; }
 
-@media screen and (max-width: 600px) {
-  .trabajos {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-    .trabajos .box1 img {
-      width: 200px;
-      height: 200px; } }
-.trabajos {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 1900px;
-  flex-wrap: wrap;
-  padding: 10px 0px; }
-  .trabajos .boxes1 img {
-    width: 620px;
-    height: 620px; }
-  .trabajos .box1:hover {
-    background-image: url(./assets/Rectangle\20.png); }
-
-.trabajos .boton {
-  font-family: 'Work Sans', sans-serif;
-  border: none;
-  background-color: #0D0D0D;
-  padding: 5px 20px;
-  color: white;
-  top: 70vh;
-  font-size: 14px;
-  margin-top: 10px; }
-
-.cv {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-  .cv .imagen {
-    display: block;
-    width: 80%; }
-
-/* media-query cv
-@media screen and (max-width:700px){
-    .cv{
-        background-image: url(./assets/Portfolio3.png)
-    }
-}
-*/
-@media screen and (max-width: 700px) {
-  header nav {
-    display: none; }
-
-  .redes {
-    display: none; } }
 .formulario {
   height: 500px;
   display: flex;
@@ -160,7 +174,7 @@ header {
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #0D0D0D;
     width: 800px;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px; }
@@ -190,7 +204,7 @@ header {
 
 hr {
   margin: 200px 100px 60px 100px;
-  border: 1.2px solid black; }
+  border: 1.2px solid #0D0D0D; }
 
 footer nav {
   display: flex;
@@ -204,7 +218,7 @@ footer li {
   display: inline-block;
   text-decoration: none;
   font-family: 'Work Sans', sans-serif;
-  color: black;
+  color: #0D0D0D;
   list-style: none;
   padding: 0px 20px; }
 footer .redes {
